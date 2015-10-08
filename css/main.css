@@ -24,7 +24,7 @@ body {
 }
 
 .portrait {
-  width: 75%;
+  width: 100%;
   display: block;
 }
 
@@ -41,7 +41,16 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-.my-work {
+p {
+  margin-left: 0.75em;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-left: 0.75em;
+}
+
+.my-work img{
   width: 100%;
 }
 
@@ -50,8 +59,87 @@ figure {
   margin-right: 0;
 }
 
-.icons {
+figcaption {
+  padding-bottom: 2em;
+  margin-left: 0.75em;
+}
+
+.icons-1 img {
   width: 45%;
   margin-left: 0.5em;
   margin-bottom: 0.5em;
+}
+
+.icons img {
+  width: 45%;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+
+@media only screen and (min-width: 46.875em) { /* 750 */
+  .portrait {
+    float: left;
+    width: 50%;
+  }
+
+.header {
+  float: right;
+  width: 50%;
+  padding-top: 7rem;
+}
+
+.logo {
+  width: 25%;
+  margin: 0 auto;
+}
+
+h2 {
+  clear: both;
+}
+
+.my-work{
+  width: 43%;
+  float: left;
+  margin-left: 1.5em;
+}
+
+.icons img {
+  width: 12.5%;
+}
+
+a .icons {
+  float: left;
+  width: 12.5%;
+}
+
+.icons-1 img {
+  width: 12.5%;
+  margin-left: 10em;
+}
+
+a .icons-1 {
+  float: left;
+  width: 12.5%;
+}
+}
+
+@media only screen and (min-width: 65.625em) { /* 1050 */
+  .portrait {
+    float: left;
+    width: 41%;
+  }
+
+  .header {
+    float: right;
+    width: 50%;
+    padding-top: 7rem;
+    margin-right: 2.5rem;
+  }
+
+  .my-work{
+    width: 22%;
+    float: left;
+    margin-left: 1.5em;
+  }
 }
