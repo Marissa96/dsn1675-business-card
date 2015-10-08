@@ -96,6 +96,9 @@ figcaption {
 
 h2 {
   clear: both;
+  padding-top: 2rem;
+  margin-left: 0.75em;
+  margin-bottom: 0;
 }
 
 .my-work{
@@ -142,4 +145,26 @@ a .icons-1 {
     float: left;
     margin-left: 1.5em;
   }
+
+  .icons img {
+    width: 8.33%;
+  }
+
+  a .icons {
+    float: left;
+    width: 8.33%;
+  }
+
+  .icons-1 img {
+    width: 8.33%;
+    margin-left: 22em;
+  }
+
+  a .icons-1 {
+    float: left;
+    width: 8.33%;
+  }
 }
+
+
+/* remember to choose a google font*/
