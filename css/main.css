@@ -28,6 +28,49 @@ body {
   display: block;
 }
 
+.me {
+  position: relative;
+}
+
+.nav-bar {
+  overflow: hidden;
+  background-color: rgba(0, 174, 239, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+nav ol {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+  display: block;
+  float: left;
+  width: 50%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  width: 50%;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+nav li:hover {
+  background-color: #00AEEF;
+}
+
 .logo {
   width: 50%;
   display: block;
@@ -47,7 +90,7 @@ p {
 
 h2 {
   margin-top: 2rem;
-  margin-left: 0.75em;
+  margin-left: 0.5em;
 }
 
 .my-work img{
@@ -65,22 +108,166 @@ figcaption {
 }
 
 .icons-1 img {
-  width: 45%;
-  margin-left: 0.5em;
-  margin-bottom: 0.5em;
+  width: 25%;
+  margin-left: 4em;
+  margin-bottom: 1em;
 }
 
-.icons img {
-  width: 45%;
-  margin-left: 0.5em;
-  margin-bottom: 0.5em;
+.icons-2 img {
+  width: 25%;
+  margin-left: 1em;
+  margin-bottom: 1em;
 }
 
+.icons-3 img {
+  width: 25%;
+  margin-left: 4em;
+  margin-bottom: 1em;
+}
+
+.icons-4 img {
+  width: 25%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+footer {
+  text-align: center;
+  border-top: 3px solid #00aeef;
+}
+
+@media only screen and (min-width: 31.25em) { /* 500 */
+  .portrait {
+    width: 80%;
+    display: block;
+  }
+
+  nav ol {
+    padding-right: 6.5em;
+  }
+
+  .logo {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-left: 0.5em;
+  }
+
+  .my-work img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+  }
+
+  .icons-1 img {
+    width: 25%;
+    margin-left: 8em;
+    margin-bottom: 1em;
+  }
+
+  .icons-2 img {
+    width: 25%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  .icons-3 img {
+    width: 25%;
+    margin-left: 8em;
+    margin-bottom: 1em;
+  }
+
+  .icons-4 img {
+    width: 25%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 37.5em) { /* 600 */
+.portrait {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav ol {
+    padding-left: 7.5em;
+    padding-right: 7.5em;
+  }
+
+  .my-work img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+  }
+
+  .figcaption {
+    padding-bottom: 2em;
+    margin: 0 auto;
+    max-width: 30em;
+  }
+
+  .icons-1 img {
+    width: 15%;
+    margin-left: 5.5em;
+    margin-bottom: 1em;
+  }
+
+  .icons-2 img {
+    width: 15%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  .icons-3 img {
+    width: 15%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  .icons-4 img {
+    width: 15%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 40.625em) { /* 600 */
+.first-p {
+  max-width: 35em;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+}
 
 @media only screen and (min-width: 46.875em) { /* 750 */
   .portrait {
     float: left;
     width: 50%;
+  }
+
+  .me {
+    position: relative;
+  }
+
+
+  .nav-bar {
+    overflow: hidden;
+    background-color: rgba(0, 174, 239, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 
 .header {
@@ -94,6 +281,10 @@ figcaption {
   margin: 0 auto;
 }
 
+.first-p {
+  margin-left: 1em;
+}
+
 h2 {
   clear: both;
   padding-top: 2rem;
@@ -102,29 +293,53 @@ h2 {
 }
 
 .my-work{
-  width: 43%;
+  width: 45%;
   float: left;
   margin-left: 1.5em;
-}
-
-.icons img {
-  width: 12.5%;
-}
-
-a .icons {
-  float: left;
-  width: 12.5%;
 }
 
 .icons-1 img {
   width: 12.5%;
   margin-left: 10em;
+  clear: both;
 }
 
 a .icons-1 {
   float: left;
   width: 12.5%;
 }
+
+.icons-2 img {
+  width: 12.5%;
+  clear: both;
+}
+
+a .icons-2 {
+  float: left;
+  width: 12.5%;
+}
+
+.icons-3 img {
+  width: 12.5%;
+  margin-left: 1em;
+  clear: both;
+}
+
+a .icons-3 {
+  float: left;
+  width: 12.5%;
+}
+
+.icons-4 img {
+  width: 12.5%;
+  clear: both;
+}
+
+a .icons-4 {
+  float: left;
+  width: 12.5%;
+}
+
 }
 
 @media only screen and (min-width: 65.625em) { /* 1050 */
@@ -164,6 +379,37 @@ a .icons-1 {
     float: left;
     width: 8.33%;
   }
+
+  .icons-2 img {
+    width: 8.33%;
+    margin-left: 22em;
+  }
+
+  a .icons-2 {
+    float: left;
+    width: 8.33%;
+  }
+
+  .icons-3 img {
+    width: 8.33%;
+    margin-left: 22em;
+  }
+
+  a .icons-3 {
+    float: left;
+    width: 8.33%;
+  }
+
+  .icons-4 img {
+    width: 8.33%;
+    margin-left: 22em;
+  }
+
+  a .icons-4 {
+    float: left;
+    width: 8.33%;
+  }
+
 }
 
 
