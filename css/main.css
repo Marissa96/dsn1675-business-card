@@ -436,4 +436,49 @@ h1 {
 }
 
 
+@media print {
+  body {
+    border: dashed black 1px;
+    width: 3.5in;
+    height: 2in;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .first-p {
+    display: none;
+  }
+
+  .my-work {
+  display: none;
+  }
+
+  h2 {
+  display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .social a::after {
+    content: " (" attr(href) ")";
+    color: #999;
+    margin-left: 0.5rem;
+  }
+
+  .social img {
+    display: none;
+  }
+
+  footer {
+    border: none;
+  }
+
 /* remember to choose a google font*/
